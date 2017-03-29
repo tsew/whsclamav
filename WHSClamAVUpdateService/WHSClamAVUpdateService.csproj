@@ -42,6 +42,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -53,8 +54,14 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HomeServerControls">
+      <HintPath>..\HomeServerControls.dll</HintPath>
+    </Reference>
+    <Reference Include="HomeServerExt">
+      <HintPath>..\HomeServerExt.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.HomeServer.SDK.Interop.v1">
-      <HintPath>..\..\..\Windows Home Server\Microsoft.HomeServer.SDK.Interop.v1.dll</HintPath>
+      <HintPath>..\Microsoft.HomeServer.SDK.Interop.v1.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -63,6 +70,9 @@
     <Reference Include="System.Management" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
+    <Reference Include="WHSCommon">
+      <HintPath>..\WHSCommon.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Home Server Add-In1\ClamConfig.cs">
@@ -121,8 +131,9 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>SC \\WHS-VM stop "WHSClamAV Update"</PreBuildEvent>
-    <PostBuildEvent>copy "$(TargetDir)*" \\whs-vm\WHSConsole
-SC \\WHS-VM start "WHSClamAV Update"</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -15,56 +15,20 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0195DDDB4416BAA87F555BA4F06A3BDB"
-        "OwnerKey" = "8:_BD642BE361ACEE3EE0CA737308CFD31C"
+        "MsmKey" = "8:_0313FF244FA84B03B6C2D61A205D3440"
+        "OwnerKey" = "8:_AE25B99862AC477EAADABA3E891AD394"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_0195DDDB4416BAA87F555BA4F06A3BDB"
+        "MsmKey" = "8:_0313FF244FA84B03B6C2D61A205D3440"
         "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_0DC64D62F316C97DAA71B23AE973D970"
-        "OwnerKey" = "8:_F05768143F2623977B2503A40D5C060C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0DC64D62F316C97DAA71B23AE973D970"
-        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0DC64D62F316C97DAA71B23AE973D970"
-        "OwnerKey" = "8:_BD642BE361ACEE3EE0CA737308CFD31C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_12E3F8942587DE3D80F4F13E4C1B962E"
-        "OwnerKey" = "8:_F05768143F2623977B2503A40D5C060C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_12E3F8942587DE3D80F4F13E4C1B962E"
-        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2DB1F558B6B487C0F9122AA2832DF660"
-        "OwnerKey" = "8:_F05768143F2623977B2503A40D5C060C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2DB1F558B6B487C0F9122AA2832DF660"
-        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
+        "MsmKey" = "8:_0313FF244FA84B03B6C2D61A205D3440"
+        "OwnerKey" = "8:_F0F8508E77134FB09A97B79FEFD5A5BA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -75,38 +39,86 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_48CD4B595CF165A2CF21C3EFB30A711F"
+        "OwnerKey" = "8:_4BDD34DB90B19C6C452DA5447DE171C7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_48CD4B595CF165A2CF21C3EFB30A711F"
+        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_48CD4B595CF165A2CF21C3EFB30A711F"
+        "OwnerKey" = "8:_F0F8508E77134FB09A97B79FEFD5A5BA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_48CD4B595CF165A2CF21C3EFB30A711F"
+        "OwnerKey" = "8:_AE25B99862AC477EAADABA3E891AD394"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4BDD34DB90B19C6C452DA5447DE171C7"
+        "OwnerKey" = "8:_AE25B99862AC477EAADABA3E891AD394"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4BDD34DB90B19C6C452DA5447DE171C7"
+        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4BDD34DB90B19C6C452DA5447DE171C7"
+        "OwnerKey" = "8:_F0F8508E77134FB09A97B79FEFD5A5BA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_AE25B99862AC477EAADABA3E891AD394"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_BD642BE361ACEE3EE0CA737308CFD31C"
-        "OwnerKey" = "8:_F05768143F2623977B2503A40D5C060C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BD642BE361ACEE3EE0CA737308CFD31C"
-        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EBCB65F412DD6F98D510092F57B4C28D"
-        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F05768143F2623977B2503A40D5C060C"
-        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F0F8508E77134FB09A97B79FEFD5A5BA"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F7D9B71BE2A045E0BC0113F20CF0C019"
+        "OwnerKey" = "8:_4BDD34DB90B19C6C452DA5447DE171C7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F7D9B71BE2A045E0BC0113F20CF0C019"
+        "OwnerKey" = "8:_33980F01C7E6481DA566B002C03E8F37"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F7D9B71BE2A045E0BC0113F20CF0C019"
+        "OwnerKey" = "8:_F0F8508E77134FB09A97B79FEFD5A5BA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F7D9B71BE2A045E0BC0113F20CF0C019"
+        "OwnerKey" = "8:_AE25B99862AC477EAADABA3E891AD394"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F7D9B71BE2A045E0BC0113F20CF0C019"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -130,43 +142,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EBCB65F412DD6F98D510092F57B4C28D"
+        "OwnerKey" = "8:_0313FF244FA84B03B6C2D61A205D3440"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F05768143F2623977B2503A40D5C060C"
+        "OwnerKey" = "8:_4BDD34DB90B19C6C452DA5447DE171C7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BD642BE361ACEE3EE0CA737308CFD31C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0195DDDB4416BAA87F555BA4F06A3BDB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0DC64D62F316C97DAA71B23AE973D970"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_12E3F8942587DE3D80F4F13E4C1B962E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2DB1F558B6B487C0F9122AA2832DF660"
+        "OwnerKey" = "8:_48CD4B595CF165A2CF21C3EFB30A711F"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -381,169 +369,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0195DDDB4416BAA87F555BA4F06A3BDB"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Interop.WHSNotification, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_0195DDDB4416BAA87F555BA4F06A3BDB"
-                    {
-                    "Name" = "8:Interop.WHSNotification.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Interop.WHSNotification.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0DC64D62F316C97DAA71B23AE973D970"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WHSCommon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_0DC64D62F316C97DAA71B23AE973D970"
-                    {
-                    "Name" = "8:WHSCommon.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:WHSCommon.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_12E3F8942587DE3D80F4F13E4C1B962E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:qsmif, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_12E3F8942587DE3D80F4F13E4C1B962E"
-                    {
-                    "Name" = "8:qsmif.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:qsmif.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2DB1F558B6B487C0F9122AA2832DF660"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:HomeServerExt, Version=1.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_2DB1F558B6B487C0F9122AA2832DF660"
-                    {
-                    "Name" = "8:HomeServerExt.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:HomeServerExt.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BD642BE361ACEE3EE0CA737308CFD31C"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WHSManagedNotification, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_BD642BE361ACEE3EE0CA737308CFD31C"
-                    {
-                    "Name" = "8:WHSManagedNotification.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:WHSManagedNotification.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EBCB65F412DD6F98D510092F57B4C28D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0313FF244FA84B03B6C2D61A205D3440"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Microsoft.HomeServer.SDK.Interop.v1, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_EBCB65F412DD6F98D510092F57B4C28D"
+                    "_0313FF244FA84B03B6C2D61A205D3440"
                     {
                     "Name" = "8:Microsoft.HomeServer.SDK.Interop.v1.dll"
                     "Attributes" = "3:512"
@@ -567,20 +400,82 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F05768143F2623977B2503A40D5C060C"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_48CD4B595CF165A2CF21C3EFB30A711F"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WHSCommon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_48CD4B595CF165A2CF21C3EFB30A711F"
+                    {
+                    "Name" = "8:WHSCommon.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:WHSCommon.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4BDD34DB90B19C6C452DA5447DE171C7"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:HomeServerControls, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_F05768143F2623977B2503A40D5C060C"
+                    "_4BDD34DB90B19C6C452DA5447DE171C7"
                     {
                     "Name" = "8:HomeServerControls.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:HomeServerControls.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F7D9B71BE2A045E0BC0113F20CF0C019"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:HomeServerExt, Version=1.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_F7D9B71BE2A045E0BC0113F20CF0C019"
+                    {
+                    "Name" = "8:HomeServerExt.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:HomeServerExt.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BA290C16C638453C8596574D7E893B64"
@@ -655,7 +550,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WHSClamAV"
         "ProductCode" = "8:{0112BA9F-FED9-4190-8E4B-AFA6A037E08B}"
-        "PackageCode" = "8:{22BDCA63-0FB0-424C-AA15-343E43876EA8}"
+        "PackageCode" = "8:{53E8AF31-2416-4944-B645-3ACB81804394}"
         "UpgradeCode" = "8:{AD7CA479-FEDE-40D1-90D3-13F8A9237DE7}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -678,7 +573,7 @@
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
-        "PostBuildEvent" = "8:\"$(ProjectDir)..\\..\\MakeWHSMSI\\MakeWHSMSI\\bin\\Release\\MakeWHSMSI.exe\" \"$(BuiltOuputPath)\"\r\ncopy \"$(BuiltOuputPath)\" \\\\whs-vm\\software\\Add-Ins\\\r\n"
+        "PostBuildEvent" = "8:\"$(ProjectDir)..\\..\\MakeWHSMSI\\MakeWHSMSI\\bin\\Release\\MakeWHSMSI.exe\" \"$(BuiltOuputPath)\"\r\n"
         "RunPostBuildEvent" = "3:0"
         }
         "Registry"

@@ -28,8 +28,6 @@ namespace WHSClamAVUpdateService
         DateTime lastUpdate = DateTime.MinValue;
 
         Boolean hasAlertDefinitionsOutOfDate = false;
-        Boolean hasAlertAddinOutOfDate = false;
-        Boolean hasAlertClamWinOutOfDate = false;
         Boolean hasAlertNotInstalled = false;
         Boolean hasAlertVirusFound = false;
 

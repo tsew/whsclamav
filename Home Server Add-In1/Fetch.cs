@@ -161,7 +161,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
                 String clamWinVer = vXML.SelectNodes("/WHSClamAV/PlugIn/Version").Item(0).InnerText;
                 return clamWinVer;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // if we failed then return the hard coded value
                 return ClamWinExeVer;
@@ -181,9 +181,10 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
                 String clamWinURL = vXML.SelectNodes("/WHSClamAV/PlugIn/Download").Item(0).InnerText;
                 return clamWinURL;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // if we failed then return the hard coded value
+                
                 return ClamWinExe;
             }
         }

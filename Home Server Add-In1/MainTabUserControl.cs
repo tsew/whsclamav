@@ -57,8 +57,8 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
         {
             string shareName = sender.ToString();
             string sharePath = string.Empty;
-            Array shares = pInfo.GetShareInfo2();
-            foreach (IShareInfo2 share in shares)
+            Array shares = pInfo.GetShareInfo();
+            foreach (IShareInfo share in shares)
             {
                 if (share.Name.Equals(shareName))
                 {

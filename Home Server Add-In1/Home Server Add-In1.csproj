@@ -43,6 +43,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -57,13 +58,13 @@
   <ItemGroup>
     <Reference Include="HomeServerControls, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Windows Home Server\HomeServerControls.dll</HintPath>
+      <HintPath>..\HomeServerControls.dll</HintPath>
     </Reference>
     <Reference Include="HomeServerExt">
-      <HintPath>..\..\..\Windows Home Server\HomeServerExt.dll</HintPath>
+      <HintPath>..\HomeServerExt.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.HomeServer.SDK.Interop.v1, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\Windows Home Server\Microsoft.HomeServer.SDK.Interop.v1.dll</HintPath>
+      <HintPath>..\Microsoft.HomeServer.SDK.Interop.v1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -72,7 +73,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WHSCommon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
-      <HintPath>..\..\..\Windows Home Server\WHSCommon.dll</HintPath>
+      <HintPath>..\WHSCommon.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -208,7 +209,9 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>taskkill /S WHS-VM /FI "IMAGENAME eq HomeServerConsole.exe"</PreBuildEvent>
-    <PostBuildEvent>copy "$(TargetDir)HomeServerConsoleTab.WHSClamAV.*" \\whs-vm\WHSConsole</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
