@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home Server Add-In1", "Home Server Add-In1\Home Server Add-In1.csproj", "{87029CA5-9EC8-4B4B-AF9E-0101E6D11175}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WHSClamAV", "WHSClamAV\WHSClamAV.vdproj", "{6FB802A1-2D5D-493B-8F99-792FCECB4527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WHSClamAVUpdateService", "WHSClamAVUpdateService\WHSClamAVUpdateService.csproj", "{28C80F9D-7BE0-43EC-A144-2B6D74C4EA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WHSClamAVScanService", "WHSClamAVScanService\WHSClamAVScanService.csproj", "{C0212391-B043-4053-8C71-D8A3555D4BA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87029CA5-9EC8-4B4B-AF9E-0101E6D11175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87029CA5-9EC8-4B4B-AF9E-0101E6D11175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87029CA5-9EC8-4B4B-AF9E-0101E6D11175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87029CA5-9EC8-4B4B-AF9E-0101E6D11175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB802A1-2D5D-493B-8F99-792FCECB4527}.Debug|Any CPU.ActiveCfg = Debug
+		{6FB802A1-2D5D-493B-8F99-792FCECB4527}.Debug|Any CPU.Build.0 = Debug
+		{6FB802A1-2D5D-493B-8F99-792FCECB4527}.Release|Any CPU.ActiveCfg = Release
+		{6FB802A1-2D5D-493B-8F99-792FCECB4527}.Release|Any CPU.Build.0 = Release
+		{28C80F9D-7BE0-43EC-A144-2B6D74C4EA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C80F9D-7BE0-43EC-A144-2B6D74C4EA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C80F9D-7BE0-43EC-A144-2B6D74C4EA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C80F9D-7BE0-43EC-A144-2B6D74C4EA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0212391-B043-4053-8C71-D8A3555D4BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0212391-B043-4053-8C71-D8A3555D4BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0212391-B043-4053-8C71-D8A3555D4BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0212391-B043-4053-8C71-D8A3555D4BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
