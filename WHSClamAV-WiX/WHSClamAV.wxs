@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product
+    Name="WHSClamAV"
+    Id="71D9F40C-B180-4D6A-920C-43304DBE12D9"
+    UpgradeCode="AD7CA479-FEDE-40D1-90D3-13F8A9237DE7"
+    Manufacturer="TSEW"
+    Version="0.1.10"
+    Language="1033"
+    Codepage="1252">
+    <Package
+      Manufacturer="TSEW"
+      InstallerVersion="200"
+      Languages="1033"
+      Compressed="yes"
+      SummaryCodepage="1252" />
+    <Media Id="1" EmbedCab="yes" Cabinet="WHSClamAV_cab" />
+
+    <Property Id="WHSLogo">1</Property>
+
+    <Condition Message="[ProductName] requires Windows Home Server. For more information, please refer to the User Guide.">VersionNT = 502</Condition>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder" Name="PFiles">
+        <Directory Id="WHS" Name="Windows Home Server">
+          <Component Id="HomeServerConsoleTab.WHSClamAV.dll" Guid="7F69B2B4-F32E-4B7A-8ECF-9AC1F2ED2D05">
+            <File Id="HomeServerConsoleTab.WHSClamAV.dll" Source="..\Home Server Add-In1\bin\$(var.Configuration)\HomeServerConsoleTab.WHSClamAV.dll" Vital="yes" KeyPath="yes" DiskId="1"/>
+          </Component>
+
+          <Component Id="WHSClamAVScanService.exe" Guid="371BDD46-A930-4AE1-852A-B1C78F6A5323">
+            <File Id="WHSClamAVScanService.exe" Name="WHSClamAVScanService.exe" Source="..\WHSClamAVScanService\bin\$(var.Configuration)\WHSClamAVScanService.exe" Vital="yes" KeyPath="yes" DiskId="1"/>
+            <ServiceInstall
+              Id="WHSClamAVScanServiceServiceInstaller"
+              Type="ownProcess"
+              Vital="yes"
+              Name="WHSClamAVScanService"
+              DisplayName="WHSClamAV Scan"
+              Description="WHS Clam AV Add-In Scanning Service"
+              Start="auto"
+              Account="LocalSystem"
+              ErrorControl="ignore"
+              Interactive="no"
+              >
+            </ServiceInstall>
+            <ServiceControl Id="WHSClamAVScanServiceStartService" Start="install" Stop="both" Remove="uninstall" Name="WHSClamAVScanService" Wait="yes" />
+          </Component>
+
+          <Component Id="WHSClamAVUpdateService.exe" Guid="AAD05630-B039-45B6-8B07-AC2B21876004">
+            <File Id="WHSClamAVUpdateService.exe" Name ="WHSClamAVUpdateService.exe" Source="..\WHSClamAVUpdateService\bin\$(var.Configuration)\WHSClamAVUpdateService.exe" Vital="yes" KeyPath="yes" DiskId="1"/>
+            <ServiceInstall
+              Id="WHSClamAVUpdateServiceServiceInstaller"
+              Type="ownProcess"
+              Vital="yes"
+              Name="WHSClamAVUpdateService"
+              DisplayName="WHSClamAV Update"
+              Description="WHS Clam AV Add-In Update Service"
+              Start="auto"
+              Account="LocalSystem"
+              ErrorControl="ignore"
+              Interactive="no"
+              >
+            </ServiceInstall>
+            <ServiceControl Id="WHSClamAVUpdateServiceStartService" Start="install" Stop="both" Remove="uninstall" Name="WHSClamAVUpdateService" Wait="yes" />
+          </Component>
+          
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Feature Id="DefaultFeature" Level="1">
+      <ComponentRef Id="HomeServerConsoleTab.WHSClamAV.dll" />
+      <ComponentRef Id="WHSClamAVScanService.exe" />
+      <ComponentRef Id="WHSClamAVUpdateService.exe" />
+    </Feature>
+  </Product>
+</Wix>

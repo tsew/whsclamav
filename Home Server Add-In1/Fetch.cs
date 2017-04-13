@@ -15,8 +15,11 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
 
         static ClamConfig ClamWinConfig = new ClamConfig();
 
+        //static string ClamWinExe = "http://downloads.sourceforge.net/clamwin/clamwin-0.99.1-setup.exe?use_mirror=switch";
+        //static string ClamWinExeVer = "0.99.1";
+
         // Version 0.97
-        //static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.97/clamwin-0.97-setup.exe?use_mirror=switch";
+        //static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.97/clamwin-0.97-setup.exe";
 
         // Version 0.96.5
         static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.96.5/clamwin-0.96.5-setup.exe?use_mirror=switch";
@@ -64,6 +67,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
                 if (ex is System.Net.WebException)
                 {
                     //MessageBox.Show(ex.Message, "Fatal Error in WebRequest.GetResponse()");
+                    ThrowError.Throw(ex.Message);
                 }
                 //DownloadButton.Text = "Download";
                 //DownloadButton.Enabled = true;
@@ -89,6 +93,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
                 if (ex is System.Net.WebException)
                 {
                     //MessageBox.Show(ex.Message, "Fatal Error in WebClient.OpenRead()");
+                    ThrowError.Throw(ex.Message);
                 }
                 //DownloadButton.Text = "Download";
                 //DownloadButton.Enabled = true;
