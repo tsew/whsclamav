@@ -295,7 +295,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
 
         private void DoDownload()
         {
-            throw new NotImplementedException();
+            Fetch.DoDownload();
         }
 
         /// <summary>

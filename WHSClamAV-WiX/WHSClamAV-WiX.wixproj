@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>3.10</ProductVersion>
-    <ProjectGuid>aee19e85-5105-4931-9342-af161f20a040</ProjectGuid>
+    <ProjectGuid>{c96e2403-c4e2-4e81-b9b1-a1acb30180ac}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>WHSClamAV</OutputName>
     <OutputType>Package</OutputType>

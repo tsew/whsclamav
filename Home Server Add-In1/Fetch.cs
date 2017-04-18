@@ -15,15 +15,15 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
 
         static ClamConfig ClamWinConfig = new ClamConfig();
 
-        //static string ClamWinExe = "http://downloads.sourceforge.net/clamwin/clamwin-0.99.1-setup.exe?use_mirror=switch";
-        //static string ClamWinExeVer = "0.99.1";
+        static string ClamWinExe = "https://downloads.sourceforge.net/project/clamwin/clamwin/0.99.1/clamwin-0.99.1-setup.exe?use_mirror=switch";
+        static string ClamWinExeVer = "0.99.1";
 
         // Version 0.97
         //static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.97/clamwin-0.97-setup.exe";
 
         // Version 0.96.5
-        static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.96.5/clamwin-0.96.5-setup.exe?use_mirror=switch";
-        static string ClamWinExeVer = "0.96.5";
+        //static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.96.5/clamwin-0.96.5-setup.exe?use_mirror=switch";
+        //static string ClamWinExeVer = "0.96.5";
 
         // Version 0.96.4
         //static string ClamAVExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.96.4/clamwin-0.96.4-setup.exe?use_mirror=switch";
@@ -50,7 +50,6 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
         {
             WebRequest wreq = (HttpWebRequest)WebRequest.Create(GetClamWinURL());
 
-
             WebClient wcl = new WebClient();
 
             SetProxy(ref wreq, ref wcl);
@@ -66,8 +65,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             {
                 if (ex is System.Net.WebException)
                 {
-                    //MessageBox.Show(ex.Message, "Fatal Error in WebRequest.GetResponse()");
-                    ThrowError.Throw(ex.Message);
+                    ThrowError.Throw(ex.Message + Environment.NewLine + ex.InnerException.Message, "Fatal Error in WebRequest.GetResponse()");
                 }
                 //DownloadButton.Text = "Download";
                 //DownloadButton.Enabled = true;
@@ -92,8 +90,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             {
                 if (ex is System.Net.WebException)
                 {
-                    //MessageBox.Show(ex.Message, "Fatal Error in WebClient.OpenRead()");
-                    ThrowError.Throw(ex.Message);
+                    ThrowError.Throw(ex.Message, "Fatal Error in WebClient.OpenRead()");
                 }
                 //DownloadButton.Text = "Download";
                 //DownloadButton.Enabled = true;
@@ -179,19 +176,21 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
         /// <returns>URL For ClamWin Download</returns>
         public static string GetClamWinURL()
         {
-            // try to get version xml file from internet
+         /*   // try to get version xml file from internet
             try
             {
                 XmlDocument vXML = GetVersion();
                 String clamWinURL = vXML.SelectNodes("/WHSClamAV/PlugIn/Download").Item(0).InnerText;
+                ThrowError.Throw(clamWinURL, "GetClamWinURL()");
                 return clamWinURL;
             }
             catch (Exception)
             {
                 // if we failed then return the hard coded value
-                
+                ThrowError.Throw("Using Default Value", "GetClamWinURL()");
+          */ 
                 return ClamWinExe;
-            }
+            //}
         }
 
         /// <summary>
