@@ -21,6 +21,12 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
     {
         IConsoleServices consoleServices;
 
+        static WebProxy myProxy = null;
+        static ClamConfig ClamWinConfig = new ClamConfig();
+        static string ClamWinExe = "http://downloads.sourceforge.net/clamwin/clamwin-0.99.1-setup.exe";
+        static string ClamWinExeVer = "0.99.1";
+        public WebClient client;
+
         delegate void UpdateProgessCallback(int BytesRead, int TotalBytes);
 
         public SettingsTabUserControl()
@@ -149,7 +155,6 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             }
         }
 
-
         private void ClamAVEnableButton_Click(object sender, EventArgs e)
         {
 
@@ -160,7 +165,6 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             // We don't want any changes to the radio button by user clicks
             //ClamAVEnabledLabel.Checked = !ClamAVEnabledLabel.Checked;
         }
-
 
         private void ClamAVUpdateEnableButton_Click(object sender, EventArgs e)
         {
@@ -277,6 +281,10 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
                     DoDownload();
                     break;
 
+                case "Cancel":
+                    CancelDownload();
+                    break;
+
                 case "Install":
                     DoInstall();
                     break;
@@ -294,54 +302,37 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             }
         }
 
-
-        static WebProxy myProxy = null;
-
-        static ClamConfig ClamWinConfig = new ClamConfig();
-
-        static string ClamWinExe = "http://downloads.sourceforge.net/project/clamwin/clamwin/0.99.1/clamwin-0.99.1-setup.exe";
-        static string ClamWinExeVer = "0.99.1";
-
         /// <summary>
         /// This performs the download of ClamWin
         /// </summary>
-
-        public WebClient client;
-
         public void DoDownload()
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Ssl3;
-
 
             client = new WebClient();
             client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
             client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
 
-
-            string filename = "clamwin.exe";
+            string filename = ClamConfig.ClamAVInstallFile;
             client.DownloadFileAsync(new Uri(ClamWinExe), filename);
-            //DownloadButton.Text = "Download";
-            //DownloadButton.Enabled = true;
-            //DownloadProgressBar.Visible = false;
 
-            //DownloadProgressBar.Visible = true;
-            //DownloadProgressBar.Value = 0;
-
-            //DownloadButton.Text = "Downloading";
-            //DownloadButton.Enabled = false;
-            //UpdateInstallLabel("Downloading ClamAV (Starting)   ");
-
+            SetCancel();
 
             // Set the min and max values for the progress bar to 0 and size of download
             //DownloadProgressBar.Minimum = 0;
             //DownloadProgressBar.Maximum = (int)(wbr.ContentLength / 1024);
             //DownloadProgressBar.Style = ProgressBarStyle.Blocks;
+        }
 
 
-            //UpdateInstallLabel("Downloading ClamAV (Complete)   ");
-            // Close files
-
-            //CheckStatus();
+        private void CancelDownload()
+        {
+            if (client.IsBusy)
+            {
+                client.CancelAsync();
+                UpdateInstallLabel("Downloading ClamAV - Stopped");
+            }
+            CheckStatus();
         }
 
         void client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
@@ -350,22 +341,33 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             long totalBytes = e.TotalBytesToReceive;
             int percentage = e.ProgressPercentage;
             //MessageBox.Show(e.BytesReceived.ToString(), "Bytes Rx'd");
-            DownloadProgressBar.Visible = true;
+            UpdateInstallLabel("Downloading ClamAV - " + percentage.ToString() + "%");
             DownloadProgressBar.Value = percentage;
+            // Set the LED to Gray
+            if ((percentage & 2) == 0)
+                ClamAVInstallLabel.Image = CommonImages.GrayIcon;
+            else
+                ClamAVInstallLabel.Image = CommonImages.GreenIcon;
+            ClamAVInstallLabel.Refresh();
         }
 
 
-        static void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
             string status = string.Empty;
             if (e.Cancelled)
+            {
                 status = "Cancelled";
+                DoDelete();
+            }
             else if (e.Error != null)
-                status = e.Error.Message;
+                //status = e.Error.Message;
+                status = "Error";
             else
                 status = "Completed";
 
-            MessageBox.Show(status, "Download Status");
+            UpdateInstallLabel("Downloading ClamAV - " + status);
+            CheckStatus();
         }
 
         /// <summary>
@@ -580,6 +582,9 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
                 SetDownload();
             }
 
+            if (client.IsBusy)
+                SetCancel();
+
             CheckEnabled();
         }
 
@@ -660,6 +665,15 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             UpdateInstallLabel("ClamAV is installaed and can be upgraded");
             ClamAVInstallLabel.Image = CommonImages.YellowIcon;
             DownloadProgressBar.Visible = false;
+        }
+
+        private void SetCancel()
+        {
+            DownloadProgressBar.Visible = true;
+            DownloadProgressBar.Value = 0;
+            DownloadButton.Text = "Cancel";
+            DownloadButton.Enabled = true;
+            UpdateInstallLabel("Downloading ClamAV (Starting)   ");
         }
 
         private void DoInstall()
@@ -754,12 +768,14 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if (File.Exists(ClamConfig.ClamAVInstallFile))
-            {
-                File.Delete(ClamConfig.ClamAVInstallFile);
-            }
-
+            DoDelete();
             CheckStatus();
+        }
+
+        private void DoDelete()
+        {
+            if (File.Exists(ClamConfig.ClamAVInstallFile))
+                File.Delete(ClamConfig.ClamAVInstallFile);
         }
 
         private void ProxySaveButton_Click(object sender, EventArgs e)
