@@ -78,9 +78,6 @@
     <Compile Include="..\Home Server Add-In1\ClamConfig.cs">
       <Link>ClamConfig.cs</Link>
     </Compile>
-    <Compile Include="..\Home Server Add-In1\Fetch.cs">
-      <Link>Fetch.cs</Link>
-    </Compile>
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>

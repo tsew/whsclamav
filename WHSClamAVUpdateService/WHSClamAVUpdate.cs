@@ -311,10 +311,10 @@ namespace WHSClamAVUpdateService
         private void DoWebCheck()
         {
             // Check version of ClamWin installed against that on the web
-            Fetch.GetClamWinURL();
-            Fetch.GetClamWinVersion();
-            CheckClamWinVersion();
-            CheckAddInVersion();
+            //GetClamWinURL();
+            //GetClamWinVersion();
+            //CheckClamWinVersion();
+            //CheckAddInVersion();
         }
                 
         private void CheckClamWinVersion()

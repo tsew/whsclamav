@@ -201,6 +201,7 @@ namespace Microsoft.HomeServer.HomeServerConsoleTab.Home_Server_Add_In1
             this.DownloadProgressBar.Size = new System.Drawing.Size(232, 16);
             this.DownloadProgressBar.TabIndex = 12;
             this.DownloadProgressBar.Visible = false;
+            this.DownloadProgressBar.Click += new System.EventHandler(this.DownloadProgressBar_Click);
             // 
             // ClamAVInstallLabel
             // 

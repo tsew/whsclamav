@@ -33,6 +33,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,7 +79,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClamConfig.cs" />
-    <Compile Include="Fetch.cs" />
     <Compile Include="HomeServerTabExtender.cs" />
     <Compile Include="MainTabUserControl.cs">
       <SubType>UserControl</SubType>
