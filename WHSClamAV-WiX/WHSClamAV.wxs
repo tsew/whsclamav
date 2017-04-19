@@ -19,7 +19,6 @@
     <Property Id="WHSLogo">1</Property>
 
     <Condition Message="[ProductName] requires Windows Home Server. For more information, please refer to the User Guide.">VersionNT = 502</Condition>
-
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder" Name="PFiles">
         <Directory Id="WHS" Name="Windows Home Server">
@@ -62,7 +61,7 @@
             </ServiceInstall>
             <ServiceControl Id="WHSClamAVUpdateServiceStartService" Start="install" Stop="both" Remove="uninstall" Name="WHSClamAVUpdateService" Wait="yes" />
           </Component>
-          
+
         </Directory>
       </Directory>
     </Directory>
