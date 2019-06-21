@@ -1,3 +1,4 @@
+[![Build Status](https://tsew.visualstudio.com/TSEW/_apis/build/status/WHSClamAV?branchName=master)](https://tsew.visualstudio.com/TSEW/_build/latest?definitionId=7&branchName=master)
 ## WHSClamAV - Anitvirus for Windows Home Server v1
 
 For more information visit http://whsclamav.tsew.com/
